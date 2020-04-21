@@ -20,7 +20,7 @@ public class HelloApplication {
         public String sayHello(
                 @PathVariable("firstName") String firstName,
                 @PathVariable("lastName") String lastName) {
-            return String.format("Hello  %S %S", firstName, lastName);
+            return String.format("<h1> Hello  %S %S </h1>", firstName, lastName);
         }
 
 } 
