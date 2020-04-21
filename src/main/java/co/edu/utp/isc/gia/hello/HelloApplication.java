@@ -16,11 +16,11 @@ public class HelloApplication {
 		SpringApplication.run(HelloApplication.class, args);
 	}
         
-        @GetMapping("/{firsName}/{lastName}")
+        @GetMapping("/{firstName}/{lastName}")
         public String sayHello(
                 @PathVariable("firstName") String firstName,
-                @PathVariable("firstName") String lastName) {
-            return String.format("Hello  %s %s", firstName, lastName);
+                @PathVariable("lastName") String lastName) {
+            return String.format("Hello  %S %S", firstName, lastName);
         }
 
 } 
