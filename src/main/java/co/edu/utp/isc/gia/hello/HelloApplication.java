@@ -32,9 +32,13 @@ public class HelloApplication {
             return "Hello" + nombre + " " + apellido;
         }
         
-        @GetMapping("/{nombre}/{apellido}")
+        
+        
+        @GetMapping()
         public String helloMundo(@RequestParam("nombre") String nombre, @RequestParam("apellido") String apellido){
             return "Hello" + nombre + " " + apellido;
         }
+        //nota
+        /*en el segundo @GetMapping("/{nombre}/{apellido}") al momento de compilar me muestra un error */
 
 } 
